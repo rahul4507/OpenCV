@@ -1,7 +1,6 @@
-<<<<<<< HEAD
 # OpenCV
 This contains all the operations and codes of my opencv learning and experiments
-=======
+
 # OpenCV with Python in 4 Hours
 Notes and code used in my [**Python and OpenCV course**](https://youtu.be/oXlwWbU8l2o) on [freeCodeCamp.org](http://freecodecamp.org). You can find me on [Twitter](https://twitter.com/jasmcaus) for more info on courses I'm working on currently.
 
@@ -50,4 +49,3 @@ The images in the [Photos](https://github.com/jasmcaus/opencv-course/tree/master
 
 
 The images in the [Faces](https://github.com/jasmcaus/opencv-course/tree/master/Resources/Faces) folder were procurred from a [repo](https://www.kaggle.com/dansbecker/5-celebrity-faces-dataset) on Kaggle.
->>>>>>> cda5301df3444d044dbd5b521a0c9ad9a4090610
