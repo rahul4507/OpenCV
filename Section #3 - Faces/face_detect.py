@@ -20,5 +20,5 @@ for (x,y,w,h) in faces_rect:
 cv.imshow('Detected Faces', img)
 
 
-
 cv.waitKey(0)
+cv.destroyAllWindows()

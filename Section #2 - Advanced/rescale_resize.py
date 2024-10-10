@@ -2,17 +2,11 @@
 
 import cv2 as cv
 
+from utils import rescaleFrame
+
+
 # img = cv.imread('../Resources/Photos/cat.jpg')
 # cv.imshow('Cat', img)
-
-def rescaleFrame(frame, scale=0.75):
-    # Images, Videos and Live Video
-    width = int(frame.shape[1] * scale)
-    height = int(frame.shape[0] * scale)
-
-    dimensions = (width,height)
-
-    return cv.resize(frame, dimensions, interpolation=cv.INTER_AREA)
 
 def changeRes(width,height):
     # Live video
@@ -24,6 +18,9 @@ capture = cv.VideoCapture('../Resources/Videos/dog.mp4')
 
 while True:
     isTrue, frame = capture.read()
+
+    if not isTrue:
+        break
 
     frame_resized = rescaleFrame(frame, scale=.2)
     
