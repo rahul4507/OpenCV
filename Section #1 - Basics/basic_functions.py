@@ -10,7 +10,7 @@ cv.imshow('Park', img)
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 cv.imshow('Gray', gray)
 
-# Blur 
+# Blur
 blur = cv.GaussianBlur(img, (7,7), cv.BORDER_DEFAULT)
 cv.imshow('Blur', blur)
 
@@ -32,4 +32,7 @@ cv.imshow('Resized', resized)
 
 # Cropping
 cropped = img[50:200, 200:400]
+
 cv.imshow('Cropped', cropped)
+cv.waitKey(0)  # Waits indefinitely for a key press
+cv.destroyAllWindows()  # Closes all windows
