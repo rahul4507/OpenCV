@@ -33,6 +33,7 @@ cv.imshow('Resized', resized)
 # Cropping
 cropped = img[50:200, 200:400]
 
+#this allows smooth functioning
 cv.imshow('Cropped', cropped)
 cv.waitKey(0)  # Waits indefinitely for a key press
 cv.destroyAllWindows()  # Closes all windows
