@@ -3,7 +3,7 @@
 import cv2 as cv
 
 # Read in an image
-img = cv.imread('../Resources/Photos/park.jpg')
+img = cv.imread('../Resources/Photos/cats.jpg')
 cv.imshow('Park', img)
 
 # Converting to grayscale
@@ -35,5 +35,6 @@ cropped = img[50:200, 200:400]
 
 #this allows smooth functioning
 cv.imshow('Cropped', cropped)
+
 cv.waitKey(0)  # Waits indefinitely for a key press
 cv.destroyAllWindows()  # Closes all windows
