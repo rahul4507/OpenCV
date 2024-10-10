@@ -1,6 +1,9 @@
 import cv2 as cv
 import os
-from utils import rescale
+
+import numpy as np
+
+from utils import rescaleFrame
 
 folder_path = '../Output/Section #1/'
 
@@ -24,17 +27,18 @@ if not os.path.exists(folder_path):
 # cv.destroyAllWindows()
 
 # Reading Videos
-# vid = cv.VideoCapture("../Resources/Videos/dog.mp4")
-vid = cv.VideoCapture("D:\Movies\Interstellar.2014.2014.1080p.BluRay.x264.YIFY.mp4")
+vid = cv.VideoCapture("../Resources/Videos/dog.mp4")
+# vid = cv.VideoCapture("D:\Movies\Interstellar.2014.2014.1080p.BluRay.x264.YIFY.mp4")
 i=0
 while True:
     isTrue, frame = vid.read()
     if not isTrue:
         break
-    frame = rescale(frame,0.3)
+    frame = rescaleFrame(frame,0.3)
     cv.imshow("video",frame)
     if cv.waitKey(10) & 0xFF == ord('d'):
         break
 
 vid.release()
 cv.destroyAllWindows()
+
