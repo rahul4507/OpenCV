@@ -1,1 +1,5 @@
 .pylintrc
+.idea/
+../.idea/
+__pycache__/
+.Python
