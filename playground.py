@@ -41,12 +41,10 @@ kernel = np.ones((3,3),np.uint8)
 dilated = cv.dilate(canny, kernel, iterations=1)
 cv.imshow("Dilated", dilated)
 
-# Dilate Image
+# Erode Image
 kernel = np.ones((3,3),np.uint8)
-dilated = cv.erode(dilated, kernel, iterations=1)
-cv.imshow("eroded", dilated)
-
-
+eroded = cv.erode(dilated, kernel, iterations=1)
+cv.imshow("eroded", eroded)
 
 # let's perform arithmatic operations on image
 img1 = cv.resize(img1, (img2.shape[1], img2.shape[0]))
