@@ -28,3 +28,4 @@ bitwise_not = cv.bitwise_not(circle)
 cv.imshow('Circle NOT', bitwise_not)
 
 cv.waitKey(0)
+cv.destroyAllWindows()

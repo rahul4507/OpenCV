@@ -1,7 +1,6 @@
 #pylint:disable=no-member
 
 import cv2 as cv
-
 from utils import rescaleFrame
 
 
@@ -22,7 +21,7 @@ while True:
     if not isTrue:
         break
 
-    frame_resized = rescaleFrame(frame, scale=.2)
+    frame_resized = rescaleFrame(frame, scale=0.2)
     
     cv.imshow('Video', frame)
     cv.imshow('Video Resized', frame_resized)
