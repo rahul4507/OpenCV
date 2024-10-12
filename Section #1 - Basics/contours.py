@@ -2,6 +2,9 @@
 
 import cv2 as cv
 import numpy as np
+# Using contour detection, we can detect the borders of objects, and localize them easily in an image.
+# It is often the first step for many interesting applications,
+# such as image-foreground extraction, simple-image segmentation, detection and recognition.
 
 img = cv.imread('../Resources/Photos/cats.jpg')
 cv.imshow('Cats', img)
@@ -28,3 +31,4 @@ cv.drawContours(blank, contours, -1, (0,0,255), 1)
 cv.imshow('Contours Drawn', blank)
 
 cv.waitKey(0)
+cv.destroyAllWindows()
