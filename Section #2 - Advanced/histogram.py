@@ -12,7 +12,7 @@ blank = np.zeros(img.shape[:2], dtype='uint8')
 # gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 # cv.imshow('Gray', gray)
 
-mask = cv.circle(blank, (img.shape[1]//2,img.shape[0]//2), 100, 255, -1)
+mask = cv.circle(blank, (img.shape[1]//2,img.shape[0]//2), 100, (255,0,0), -1)
 
 masked = cv.bitwise_and(img,img,mask=mask)
 cv.imshow('Mask', masked)
